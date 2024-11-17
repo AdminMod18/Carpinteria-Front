@@ -1,0 +1,127 @@
+/* Estructura general */
+.control-panel-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.control-panel-header {
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.control-panel-content {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* Sidebar y estilos de botones */
+.sidebar {
+    background-color: #212529;
+    width: 250px;
+    padding: 15px;
+    color: white;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a,
+.sidebar ul li button {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+    border: none;
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li button:hover {
+    background-color: #495057;
+    transform: translateX(5px); /* Pequeño efecto de desplazamiento al hacer hover */
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-top-left-radius: 8px;
+}
+
+/* Información del usuario */
+.control-panel-user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: #343a40;
+}
+
+.control-panel-user-info button {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.control-panel-user-info button:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Área de contenido de formularios y panel */
+.content-area {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Botones generales de la página */
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al hacer hover */
+}
+
+button:active {
+    transform: scale(0.98); /* Da un pequeño efecto de pulsación al hacer click */
+}
